@@ -4,7 +4,10 @@
 	color:#fff;
 	border-top:0px;
 }
-.pager{text-align: left;}
+.pager{
+    text-align: left;
+    margin-left: 40px;
+}
 .site-title{color: #fff;}
 .navbar {margin-bottom:0px;}
 .row {margin: 0px 0px;}
