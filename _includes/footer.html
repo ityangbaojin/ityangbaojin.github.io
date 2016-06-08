@@ -1,0 +1,9 @@
+<footer class="blog-footer">
+    <p>Blog template built for <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> by <a href="https://about.me/yangbaojin" target="_blank">@yangbaojin</a>.</p>
+    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    {% if site.github_username %}
+      <p>{% include icon-github.html username=site.github_username %}</p>
+    {% endif %}
+    <p>{{ site.description }}</p>
+    <p><a href="#">Back to top</a></p>
+</footer>

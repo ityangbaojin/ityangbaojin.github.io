@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: yangbaojin
+email: ityangbaojin@gmail.com
+description: yangbaojin, PHP工程师，从事web相关的开发工作。
+keywords: yangbaojin, PHP, Laravel
+skill_keywords: [PHP, Javascript, HTML+CSS, Linux, Laravel, Git, Mac, RESTful, Stackoverflow]
+
+timezone:  PRC
+encoding: "utf-8"
+
+baseurl: "" 
+url: "http://ityangbaojin.github.io" 
+
+github_username:  ityangbaojin
+github_url:  https://github.com/ityangbaojin
+
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page:num"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+
+# navigation
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: https://github.com/ityangbaojin
+    label: GitHub
+    target: _blank
+
+  -
+    href: /about
+    label: About
