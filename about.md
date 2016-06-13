@@ -19,21 +19,9 @@ menu: About
 ## keywords
 <div class="row">
 	{% for keyword in site.skill_keywords %} 
-		<button class="btn" type="button">{{ keyword }}</button> 
+		<button class="button-color btn" type="button">{{ keyword }}</button> 
 	{% endfor %}
 </div>
 
 ### 简言
 无论你觉得自己多么的不幸，永远有人比你更加不幸；无论你觉得多么的了不起，也永远有人比你更强…
-
-<script type="text/javascript">
-	var buttonColor = ['', 'default', 'primary', 'success', 'info', 'warning', 'danger'];
-	// 随机一个值
-	function randNum(arr) {
-	    return arr[Math.floor(Math.random() * arr.length)];
-	}
-	var btnElement = document.querySelectorAll('.btn');
-	for(var i = 0; i < btnElement.length; i++) {
-	    btnElement[i].className = 'btn btn-' + randNum(buttonColor);
-	}
-</script>
