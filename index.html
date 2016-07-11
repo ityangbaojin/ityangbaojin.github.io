@@ -5,7 +5,7 @@ layout: default
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <h2><a class="post-link {{ post.author }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <p class="post-meta">{{ post.excerpt | strip_html | strip_newlines | truncate:50 }}</p>
         <span class="post-meta"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%Y/%m/%d" }}</span>
       </li>
@@ -37,3 +37,15 @@ layout: default
   {% endif %}
   <!-- pagination -->
 </div>
+
+<script type="text/javascript">
+  $(function() {
+    $('.sunnyday').attr('href', '#');
+    $('.sunnyday').click(function () {
+      var passWord = prompt('请输入查看密码!!!');
+      if (hex_md5(passWord) === 'd569e7165b01adda3f1dbb74faa5f6e7') {
+        window.location.href = '/2016/07/11/laravel.html';
+      }
+    });
+  });
+</script>
