@@ -29,13 +29,17 @@ gulp.task('js', function() {
   return gulp.src([
   		'assets/js/jquery.min.js',
   		'assets/js/bootstrap.min.js',
-  		'assets/js/social-share.min.js',
+      'assets/js/social-share.min.js',
+      'assets/js/store.min.js',
+  		'assets/js/md5.js',
   		'assets/js/js.js',
   	])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('build/assets/js'))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
+    .pipe(uglify().on('error', function(e) {
+       console.log(e);
+    }))
     .pipe(gulp.dest('build/assets/js'))
     .pipe(notify({ message: 'js task ok' }));
 });
