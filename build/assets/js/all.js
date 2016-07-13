@@ -309,4 +309,10 @@ $(function() {
 	document.oncontextmenu = function() {
     	return false;
   	}
+
+  	// 禁止F12键
+	if (window.event && window.event.keyCode == 123) {
+	    window.event.keyCode = 0;
+	    window.event.returnValue = false;
+  	}
 });
