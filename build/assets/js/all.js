@@ -312,7 +312,7 @@ $(function() {
 
   	// 禁止F12键
   	document.onkeydown = function() {
-		if(window.event && window.event.keyCode == 123) {
+		if (window.event && window.event.keyCode == 123) {
 			window.event.keyCode = 0;
 	    	window.event.returnValue = false;
 		}
