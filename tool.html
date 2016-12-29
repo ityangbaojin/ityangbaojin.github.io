@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<div class="col-md-12 mt25">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#base64" role="tab" data-toggle="tab" class="clear-all">Base64</a></li>
+    <li role="presentation"><a href="#urlencode" role="tab" data-toggle="tab" class="clear-all">URL编码/解码</a></li>
+    <li role="presentation"><a href="#hash" role="tab" data-toggle="tab" class="clear-all">MD5加密</a></li>
+    <li role="presentation"><a href="#ip" role="tab" data-toggle="tab" class="clear-all">IP查询</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="base64">
+        <h4>输入需要的Base64编码、解码的字符串</h4>
+        <textarea class="form-control" rows="6" name="baseVal" placeholder="输入需要的Base64编码、解码的字符串"></textarea>   
+        <div class="mb10">
+          <button type="button" class="btn btn-primary base-encode">Base64编码</button>
+          <button type="button" class="btn btn-success base-decode">Base64解码</button>
+        </div> 
+        <textarea class="form-control baseVal" rows="6" placeholder="Base64解码、编码之后的字符串"></textarea>    
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="urlencode">
+        <h4>输入需要的UrlEncode编码、解码字符串</h4>
+        <textarea class="form-control" rows="6" name="urlVal" placeholder="输入需要的UrlEncode编码、解码的字符串"></textarea>   
+        <div class="mb10">
+          <button type="button" class="btn btn-primary url-encode">UrlEncode编码</button>
+          <button type="button" class="btn btn-success url-decode">UrlEncode解码</button>
+        </div> 
+        <textarea class="form-control urlVal" rows="6" placeholder="UrlEncode解码、编码之后的字符串"></textarea>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="hash">
+        <h4>输入需要的MD5加密字符串</h4>
+        <textarea class="form-control" rows="6" name="md5Val" placeholder="输入需要的MD5加密的字符串"></textarea>   
+        <div class="mb10">
+          <button type="button" class="btn btn-primary form-control md5-encode">MD5加密</button>
+        </div> 
+        <textarea class="form-control md5Val" rows="6" placeholder="MD5加密码后的字符串"></textarea>
+    </div>
+
+     <div role="tabpanel" class="tab-pane" id="ip">
+        <h4>输入需要的IP</h4>
+        <input class="form-control" type="text" name="ipVal" placeholder="输入需要的IP" />
+        <div class="mb10">
+          <button type="button" class="btn btn-primary form-control ip-select">查询</button>
+        </div>
+        <h5 class="ip-info">该IP的详细信息为：</h5>
+        <table class="table table-striped ip-data"></table>
+    </div>
+
+  </div>
+</div>

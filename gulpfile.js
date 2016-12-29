@@ -31,7 +31,9 @@ gulp.task('js', function() {
   		'assets/js/bootstrap.min.js',
       'assets/js/social-share.min.js',
       'assets/js/store.min.js',
-  		'assets/js/md5.js',
+      'assets/js/md5.js',
+      'assets/js/base64.js',
+  		'assets/js/utf8.js',
   		'assets/js/js.js',
   	])
     .pipe(concat('all.js'))
