@@ -110,7 +110,7 @@ $(function() {
             success: function(data) {
                 if (data.errNum == 0 && data.errMsg == 'success') {
                     $('.ip-info ').show();
-                    var str = '<tr><th>IP</th><th>国家/地区</th><th>省份</th><th>城市</th><th>县</th><th>运营商</th></tr>';
+                    var str = '<tr><th>IP</th><th>国家/地区</th><th>省份</th><th>城市</th><th>区/县</th><th>运营商</th></tr>';
                         str += '<tr class="success"><td>' + data.retData.ip + '</td><td>' + data.retData.country + '</td><td>' + data.retData.province + '</td><td>' + data.retData.city + '</td><td>' + data.retData.district + '</td><td>' + data.retData.carrier + '</td></tr>';
                     $('.ip-data').html(str);
                     setTimeout(function () {
