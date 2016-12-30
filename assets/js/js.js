@@ -56,9 +56,10 @@ $(function() {
 		}
 	}
 
-    // 清除textarea内容
+    // 清除textarea和input输入的内容
     $('.clear-all').click(function () {
         $('textarea').val('');
+        $('input').val('');
     });
 
     // Base64编码
@@ -129,5 +130,34 @@ $(function() {
                 }, 1500);
             }
         });
+    });
+
+    // 当前时间戳
+    setInterval(function () {
+        $('.this-time').html(moment().unix()); 
+    }, 1000);
+
+    // Unix时间戳 转北京时间
+    $('.ltor-beijin').click(function () {
+        var unixTimeVal = $.trim($('input[name="unixtimeVal"]').val());
+        $('.beijin-time-val').val(moment(unixTimeVal * 1000).format('YYYY-MM-DD HH:mm:ss'));
+    });
+
+    // 北京时间转Unix时间戳 
+    $('.ltor-unix').click(function () {
+        var beiJinTimeVal = $.trim($('input[name="beijin-time-val"]').val());
+        $('.unixtimeVal').val(moment(beiJinTimeVal).unix());       
+    });
+
+    //  年月日时分秒填写转时间戳
+    $('.ltor-beijin-unix').click(function () {
+        var year = $.trim($('input[name="year"]').val());
+        var month = $.trim($('input[name="month"]').val());
+        var day = $.trim($('input[name="day"]').val());
+        var times = $.trim($('input[name="times"]').val());
+        var minute = $.trim($('input[name="minute"]').val());
+        var second = $.trim($('input[name="second"]').val());
+        var unixBeijinTimeVal = year + '-' + month + '-' +  day + ' ' + times + ':' + minute + ':' + second;
+        $('.unixBeijintimeVal').val(moment(unixBeijinTimeVal).unix());
     });
 });

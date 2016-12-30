@@ -8,6 +8,7 @@ layout: default
     <li role="presentation"><a href="#urlencode" role="tab" data-toggle="tab" class="clear-all">URL编码/解码</a></li>
     <li role="presentation"><a href="#hash" role="tab" data-toggle="tab" class="clear-all">MD5加密</a></li>
     <li role="presentation"><a href="#ip" role="tab" data-toggle="tab" class="clear-all">IP查询</a></li>
+    <li role="presentation"><a href="#unixtime" role="tab" data-toggle="tab" class="clear-all">Unix时间戳</a></li>
   </ul>
 
   <!-- Tab panes -->
@@ -41,7 +42,7 @@ layout: default
         <textarea class="form-control md5Val" rows="6" placeholder="MD5加密码后的字符串"></textarea>
     </div>
 
-     <div role="tabpanel" class="tab-pane" id="ip">
+    <div role="tabpanel" class="tab-pane" id="ip">
         <h4>输入需要的IP</h4>
         <input class="form-control" type="text" name="ipVal" placeholder="输入需要的IP" />
         <div class="mb10">
@@ -51,5 +52,61 @@ layout: default
         <table class="table table-striped ip-data"></table>
     </div>
 
+    <div role="tabpanel" class="tab-pane" id="unixtime">
+      <h4></h4>
+      <div class="mb10">当前时间戳：<span class="this-time"></span></div>
+      <div class="form-inline">
+        <div class="form-group">
+          <label class="form-control-static unix-label">Unix时间戳：</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control width280" name="unixtimeVal" placeholder="Unix时间戳"> second
+        </div>
+        <button type="submit" class="btn btn-primary ltor ltor-beijin">to</button>
+        <div class="form-group">
+          <label class="form-control-static unix-label">北京时间：</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control width280 beijin-time-val" placeholder="北京时间">
+        </div>
+      </div>
+      
+      <div class="form-inline mt25">
+        <div class="form-group">
+          <label class="form-control-static unix-label">&nbsp;&nbsp;&nbsp;&nbsp;北京时间：</label>
+        </div>
+        <div class="form-group">
+          <input type="text" data-toggle="tooltip" data-placement="top" title="格式如下：2016-12-30 17:05:35 2016/12/30 17:05:35" class="form-control width280" name="beijin-time-val" placeholder="北京时间">
+        </div>
+        <button type="submit" class="btn btn-primary ltor ltor-unix">to</button>
+        <div class="form-group">
+          <label class="form-control-static unix-label">Unix时间戳：</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control width280 unixtimeVal" placeholder="Unix时间戳"> second
+        </div>
+      </div>
+
+      <div class="form-inline mt25">
+        <div class="form-group">
+          <label class="form-control-static unix-label">&nbsp;&nbsp;&nbsp;&nbsp;北京时间：</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control width80" name="year" placeholder="年"> 年
+          <input type="text" class="form-control width45" name="month" placeholder="月"> 月
+          <input type="text" class="form-control width45" name="day" placeholder="日"> 日
+          <input type="text" class="form-control width45" name="times" placeholder="时"> 时
+          <input type="text" class="form-control width45" name="minute" placeholder="分"> 分
+          <input type="text" class="form-control width45" name="second" placeholder="秒"> 秒
+        </div>
+        <button type="submit" class="btn btn-primary ltor ltor-beijin-unix">to</button>
+        <div class="form-group">
+          <label class="form-control-static unix-label">Unix时间戳：</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control width280 unixBeijintimeVal" placeholder="Unix时间戳"> second
+        </div>
+      </div>
+    </div>
   </div>
 </div>

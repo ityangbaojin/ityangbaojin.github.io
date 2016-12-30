@@ -31,6 +31,12 @@
 .mt25 {margin-top:25px;}
 .mb10 {margin:10px 0;}
 .ip-info {display: none;}
+.unix-label {font-weight: normal;}
+.width280 {width: 280px !important;}
+.ltor {width: 50px; margin: 0 25px;}
+.this-time {color: red;}
+.width80 {width: 80px !important;}
+.width45 {width: 45px !important;}
 
 /* Icons */
 .icon > svg {
