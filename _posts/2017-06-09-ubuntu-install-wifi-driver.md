@@ -14,24 +14,23 @@ author: ityangbaojin
 ### 一、code make install
 1. github Clone or download
 2. 进入目录
-  >cd xxx
+  ```cd xxx```
 3. 配置
-  >./configure
+  ```./configure```
 4. 编译
-  > make
+  ```make```
 5. 安装  
-  > make install
+  ```make install```
 6. 卸载
-  > make uninstall
+  ```make uninstall```
 7. 重启后就有wifi了
-  > reboot 
+  ```reboot``` 
   
 ---    
 
 ### 二、Building and installing using DKMS
 1. git clone
     > git clone https://github.com/Mange/rtl8192eu-linux-driver.git
-    
     > cd rtl8192eu-linux-driver dir
     
 2. Install DKMS and other required tools
