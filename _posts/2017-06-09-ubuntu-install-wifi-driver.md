@@ -11,7 +11,24 @@ author: ityangbaojin
 无线网卡：[COMFAST CF-WU825N](https://item.jd.com/1003188.html){:target="_blank"}  
 驱动：[rtl8192eu-linux-driver](https://github.com/Mange/rtl8192eu-linux-driver){:target="_blank"}
 
-### Building and installing using DKMS
+### 一、code make install
+1. github Clone or download
+2. 进入目录
+  >cd xxx
+3. 配置
+  >./configure
+4. 编译
+  > make
+5. 安装  
+  > make install
+6. 卸载
+  > make uninstall
+7. 重启后就有wifi了
+  > reboot 
+  
+---    
+
+### 二、Building and installing using DKMS
 1. git clone
     > git clone https://github.com/Mange/rtl8192eu-linux-driver.git
     
