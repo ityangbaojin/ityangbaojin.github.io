@@ -6,8 +6,6 @@ date:   2017-06-29
 author: ityangbaojin
 ---
 
-## Ubuntu 16.04 LTS Desktop install Wireless drive
-
 无线网卡：[COMFAST CF-WU825N](https://item.jd.com/1003188.html){:target="_blank"}  
 驱动：[rtl8192eu-linux-driver](https://github.com/Mange/rtl8192eu-linux-driver){:target="_blank"}
 
