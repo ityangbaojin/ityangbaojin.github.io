@@ -13,24 +13,12 @@ author: ityangbaojin
 
 ### 一、code make install
 1. github Clone or download [wifi-linux-driver](https://github.com/Mange/rtl8192eu-linux-driver){:target="_blank"}
-2. 进入目录
-
-  ```cd xxx```
-3. 配置
-
-  ```./configure```
-4. 编译
-
-  ```make```
-5. 安装  
-
-  ```make install```
-6. 卸载
-
-  ```make uninstall```
-7. 重启后就有wifi了
-
-  ```reboot``` 
+2. 进入目录 ```cd xxx```
+3. 配置 ```./configure```
+4. 编译 ```make```
+5. 安装 ```make install```
+6. 卸载 ```make uninstall```
+7. 重启后就有wifi了 ```reboot``` 
   
 ---    
 
