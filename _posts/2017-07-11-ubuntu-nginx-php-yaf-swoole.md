@@ -85,8 +85,8 @@ source ~/.bashrc
 1. wget http://nginx.org/download/nginx-1.11.3.tar.gz
 2. tar -zxvf nginx-1.11.3.tar.gz
 3. cd nginx-1.11.3/
-4 . /configure --prefix=/usr/local/nginx  make && make install
-5.  cp /usr/local/nginx/sbin/nginx /usr/local/bin/nginx
+4. /configure --prefix=/usr/local/nginx  make && make install
+5. cp /usr/local/nginx/sbin/nginx /usr/local/bin/nginx
 2. vim /usr/local/nginx/conf/nginx.conf
         index index.html index.htm index.php;
         location ~ \.php$ {
