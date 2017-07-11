@@ -96,8 +96,12 @@ source ~/.bashrc
             fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
             include        fastcgi_params;
         }
-3. sudo nginx 启动
-   sudo nginx -s reload
+3. 测试配置是否有语法错误
+   nginx -t
+   启动 nginx
+   sudo nginx
+   重新加载配置|重启|停止|退出
+   nginx -s reload | reopen | stop | quit
 ```
 
 ### 配置php-fpm
