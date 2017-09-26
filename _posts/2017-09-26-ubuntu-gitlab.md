@@ -96,6 +96,7 @@ ps: 看见如下图，run代表启动
 ```
 sudo gitlab-ctl status 查看GitLab状态
 sudo gitlab-ctl stop 停止GitLab
+sudo gitlab-ctl restart 重启GitLab
 sudo gitlab-ctl start 启动GitLab
 sudo gitlab-ctl tail 查看日志
 ```
