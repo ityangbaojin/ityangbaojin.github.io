@@ -10,7 +10,7 @@ author: ityangbaojin
 驱动：[rtl8192eu-linux-driver](https://github.com/Mange/rtl8192eu-linux-driver){:target="_blank"}
 
 ### 一、code make install
-1. github Clone or download [wifi-linux-driver](https://github.com/Mange/rtl8192eu-linux-driver){:target="_blank"}
+1. github clone or download [wifi-linux-driver](https://github.com/Mange/rtl8192eu-linux-driver){:target="_blank"}
 2. 进入目录 ```cd xxx```
 3. 配置 ```./configure```
 4. 编译 ```make```
