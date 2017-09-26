@@ -85,8 +85,9 @@ sudo iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 ```
 sudo gitlab-ctl status
 ```
-![](../assets/images/run.png)
-ps: 看见run代表启动
+ps: 看见如下图，run代表启动
+
+![](http://7o52ee.com1.z0.glb.clouddn.com//17-9-26/17636108.jpg)
 
 7、在浏览器地址栏中输入：http://192.168.31.59，即可访问GitLab的Web页面
 
