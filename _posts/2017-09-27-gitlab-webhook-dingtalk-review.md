@@ -88,4 +88,4 @@ author: ityangbaojin
     }
 ```
 
-5、完成之后，把接口的url配置到gitlab的webhook上就可以看push消息了。
+5、完成之后，把接口的url配置到gitlab的webhook上就可以看push消息内容了。
