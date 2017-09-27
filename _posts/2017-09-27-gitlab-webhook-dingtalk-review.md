@@ -2,7 +2,7 @@
 layout: post
 title:  "使用Gitlab的webhook和钉钉做代码review"
 excerpt: "使用Gitlab的webhook和钉钉做代码review"
-date:   2017-09-26
+date:   2017-09-27
 author: ityangbaojin
 ---
 
