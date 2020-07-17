@@ -72,37 +72,29 @@ WantedBy=multi-user.target
 ```
 
 1、启动服务
-
-- service goweb start 
+    service goweb start 
 
 2、查看服务状态，显示Active: active (running)代表启动成功 
-
-- service goweb status 
+    service goweb status 
 
 3、停止服务 
-
-- service goweb stop
+    service goweb stop
 
 
 五、安装Nginx
->apt-get install nginx
+>
+apt-get install nginx
 
 1、启动nginx
-
-- sudo nginx
+    sudo nginx
 
 2、停止nginx
-
-- sudo nginx -s stop
+    sudo nginx -s stop
 
 4、修改配置文件
-
-
-- cd /etc/nginx/conf.d
-
-- vim goweb.conf
-
-没有域名的设置，内容如下：
+    cd /etc/nginx/conf.d
+    vim goweb.conf
+    没有域名的设置，内容如下：
 
 ```
 server {
@@ -120,6 +112,7 @@ server {
     }
 }
 ```
+
 然后保存
 
 重新加载nginx配置
