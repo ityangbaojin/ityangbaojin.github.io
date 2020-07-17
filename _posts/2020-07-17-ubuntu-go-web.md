@@ -79,7 +79,7 @@ service goweb stop
 ```
 
 五、安装Nginx
-```
+>```
 apt-get install nginx
 1、启动nginx
 sudo nginx
