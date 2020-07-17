@@ -72,22 +72,36 @@ WantedBy=multi-user.target
 ```
 
 1、启动服务
+
 - service goweb start 
+
 2、查看服务状态，显示Active: active (running)代表启动成功 
+
 - service goweb status 
+
 3、停止服务 
+
 - service goweb stop
 
 
 五、安装Nginx
 >apt-get install nginx
+
 1、启动nginx
+
 - sudo nginx
+
 2、停止nginx
+
 - sudo nginx -s stop
+
 4、修改配置文件
+
+
 - cd /etc/nginx/conf.d
+
 - vim goweb.conf
+
 没有域名的设置，内容如下：
 
 ```
@@ -105,10 +119,12 @@ server {
         proxy_pass http://127.0.0.1:8080;
     }
 }
-然后保存
-重新加载nginx配置
-nginx -s reload
 ```
+然后保存
+
+重新加载nginx配置
+
+nginx -s reload
 
 六、打开浏览器
 输入服务器公网IP，就能出现Hello Golang
