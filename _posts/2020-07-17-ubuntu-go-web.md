@@ -54,9 +54,8 @@ func main() {
 
 四、创建Systemd Unit文件
 >在Ubuntu服务器中找到/lib/systemd/system路径，创建goweb.service内容如下
-```
 先在golang工作目录执行, go build main.go
-
+```
 如下goweb.service内容
 [Unit]
 Description=goweb
@@ -69,17 +68,17 @@ ExecStart=/root/work/go/go-web/main
 
 [Install]
 WantedBy=multi-user.target
-
-1、启动服务
-service goweb start
-2、查看服务状态，显示Active: active (running)代表启动成功
-service goweb status
-3、停止服务
-service goweb stop
 ```
+1、启动服务
+service goweb start 
+2、查看服务状态，显示Active: active (running)代表启动成功 
+service goweb status 
+3、停止服务 
+service goweb stop
+
 
 五、安装Nginx
->```
+>
 apt-get install nginx
 1、启动nginx
 sudo nginx
@@ -89,6 +88,7 @@ sudo nginx -s stop
 cd /etc/nginx/conf.d
 vim goweb.conf
 没有域名的设置，内容如下：
+```
 server {
     listen 80;
 
