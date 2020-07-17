@@ -6,7 +6,7 @@ date:   2020-07-17
 author: ityangbaojin
 ---
 一、前期需要准备  
-> 一台可以用的Ubuntu服务器。  
+    一台可以用的Ubuntu服务器。  
 
 二、ubuntu上安装golang
 >```
@@ -53,7 +53,7 @@ func main() {
 ```
 
 四、创建Systemd Unit文件
->在Ubuntu服务器中找到/lib/systemd/system路径，创建goweb.service内容如下。
+*** 在Ubuntu服务器中找到/lib/systemd/system路径，创建goweb.service内容如下。
     先在golang工作目录执行, go build main.go
 
 ```
@@ -80,12 +80,11 @@ WantedBy=multi-user.target
 
 
 五、安装Nginx
->
 apt-get install nginx
 
-1、启动nginx sudo nginx
+1、启动 nginx sudo nginx
 
-2、停止nginx sudo nginx -s stop
+2、停止 nginx sudo nginx -s stop
 
 4、修改配置文件
     
