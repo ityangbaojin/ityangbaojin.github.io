@@ -55,6 +55,7 @@ func main() {
 四、创建Systemd Unit文件
 >在Ubuntu服务器中找到/lib/systemd/system路径，创建goweb.service内容如下
 先在golang工作目录执行, go build main.go
+
 ```
 如下goweb.service内容
 [Unit]
@@ -69,6 +70,7 @@ ExecStart=/root/work/go/go-web/main
 [Install]
 WantedBy=multi-user.target
 ```
+
 1、启动服务
 service goweb start 
 2、查看服务状态，显示Active: active (running)代表启动成功 
