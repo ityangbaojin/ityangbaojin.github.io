@@ -6,9 +6,11 @@ date:   2020-07-17
 author: ityangbaojin
 ---
 ### 一、前期需要准备  
-    一台可以用的Ubuntu服务器。  
+***
+一台可以用的Ubuntu服务器。  
 
 ### 二、ubuntu上安装golang
+***
 >```
 apt-get install golang-go
 ```
@@ -34,6 +36,7 @@ go version
 ```
 
 ### 三、在golang工作目录创建代码
+***
 ```
 package main  // 编译成可执行文件
 
@@ -81,6 +84,7 @@ WantedBy=multi-user.target
 
 
 ### 五、安装Nginx
+***
 apt-get install nginx
 
 1、启动 nginx sudo nginx
