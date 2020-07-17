@@ -37,7 +37,7 @@ go version
 
 ### 三、在golang工作目录创建代码
 ***
-```
+```golang
 package main  // 编译成可执行文件
 
 // 导入包
