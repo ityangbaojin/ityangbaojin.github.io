@@ -5,10 +5,10 @@ excerpt: "Ubuntu服务器上部署golang web应用"
 date:   2020-07-17
 author: ityangbaojin
 ---
-一、前期需要准备  
+### 一、前期需要准备  
     一台可以用的Ubuntu服务器。  
 
-二、ubuntu上安装golang
+### 二、ubuntu上安装golang
 >```
 apt-get install golang-go
 ```
@@ -33,7 +33,7 @@ source /etc/profile
 go version
 ```
 
-三、在golang工作目录创建代码
+### 三、在golang工作目录创建代码
 ```
 package main  // 编译成可执行文件
 
@@ -52,9 +52,10 @@ func main() {
 }
 ```
 
-四、创建Systemd Unit文件
-*** 在Ubuntu服务器中找到/lib/systemd/system路径，创建goweb.service内容如下。
-    先在golang工作目录执行, go build main.go
+### 四、创建Systemd Unit文件
+*** 
+在Ubuntu服务器中找到/lib/systemd/system路径，创建goweb.service内容如下。
+先在golang工作目录执行, go build main.go
 
 ```
 如下goweb.service内容
@@ -79,7 +80,7 @@ WantedBy=multi-user.target
 3、停止服务 service goweb stop
 
 
-五、安装Nginx
+### 五、安装Nginx
 apt-get install nginx
 
 1、启动 nginx sudo nginx
@@ -117,5 +118,5 @@ server {
 
 nginx -s reload
 
-六、打开浏览器
+### 六、打开浏览器
 输入服务器公网IP，页面将出现 Hello Golang 完成
