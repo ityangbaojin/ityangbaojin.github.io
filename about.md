@@ -14,7 +14,7 @@ menu: About
 - 邮箱：ityangbaojin@gmail.com
 - 主页：[https://github.com/ityangbaojin](https://github.com/ityangbaojin)
 
-计算机专业毕业，{{ current_year | minus: 2013 }} 年在职工作经验，{{ current_year | minus: 2013 }} 年 web 开发经验。
+计算机专业毕业，{{ current_year | minus: 2016 }} 年在职工作经验，{{ current_year | minus: 2016 }} 年 web 开发经验。
 
 ## keywords
 <div class="row">
