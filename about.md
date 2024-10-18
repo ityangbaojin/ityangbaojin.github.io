@@ -8,7 +8,7 @@ menu: About
 ***
 
 ### yangbaojin
-男 80后
+男 HN
 
 ## 概况
 - 邮箱：ityangbaojin@gmail.com
